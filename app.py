@@ -19,7 +19,7 @@ try:
     import requests
     
     # First, let's check if the space is accessible
-    space_url = "https://markobinario-flaskbot.hf.space"
+    space_url = "https://markobinario-flaskbot2.hf.space"
     try:
         response = requests.get(space_url, timeout=10)
         if response.status_code == 200:
@@ -60,7 +60,7 @@ def call_hf_space_api(message):
         import requests
         
         # Try direct API call to the space using the correct endpoint
-        api_url = "https://markobinario-flaskbot.hf.space/api/predict"
+        api_url = "https://markobinario-flaskbot2.hf.space/api/predict"
         
         # Use the correct payload format for Gradio API
         payload = {
