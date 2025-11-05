@@ -19,7 +19,7 @@ try:
     import requests
     
     # First, let's check if the space is accessible
-    space_url = "https://markobinario-flaskbot.hf.space"
+    space_url = "https://markobinario-flaskbot2.hf.space"
     try:
         response = requests.get(space_url, timeout=10)
         if response.status_code == 200:
@@ -30,7 +30,7 @@ try:
         print(f"⚠ Could not reach Hugging Face Space: {e}")
     
     # Initialize client with proper error handling
-    client = Client("markobinario/flaskbot")
+    client = Client("markobinario/flaskbot2")
     print("✓ Gradio client initialized successfully")
     
 except Exception as e:
