@@ -19,7 +19,7 @@ try:
     import requests
     
     # First, let's check if the space is accessible
-    space_url = "https://huggingface.co/spaces/markobinario/flaskbot2"
+    space_url = "https://markobinario-flaskbot.hf.space"
     try:
         response = requests.get(space_url, timeout=10)
         if response.status_code == 200:
